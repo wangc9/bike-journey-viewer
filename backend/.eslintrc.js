@@ -9,4 +9,7 @@ module.exports = {
     project: './tsconfig.eslint.json',
     tsconfigRootDir: __dirname,
   },
+  rules: {
+    'import/no-extraneous-dependencies': 0,
+  },
 };
