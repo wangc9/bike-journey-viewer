@@ -2,14 +2,20 @@
 Note: "*" indicates that the commit link is a placeholder. The corresponding link will be updated in the next commit.
 
 
+## v0.0.3
+
+### Chores
+- [`d524ba1`](https://github.com/wangc9/bike-journey-viewer/commit/d524ba1a79a60d6c7979277758f081efecb913ca)* Refactor environment variable configuration and database connection to separate files in `utils`.
+
+
 ## v0.0.2
 
 ### Features
-- [`ae23020`](https://github.com/wangc9/bike-journey-viewer/commit/ae23020848e319661df4b10834bb82260ae9940c) Add PostgreSQL database for backend data source. Use `sequelize` for database connection.*
+- [`d524ba1`](https://github.com/wangc9/bike-journey-viewer/commit/d524ba1a79a60d6c7979277758f081efecb913ca) Add PostgreSQL database for backend data source. Use `sequelize` for database connection.
 
 ### Chores
 
-- [`ae23020`](https://github.com/wangc9/bike-journey-viewer/commit/ae23020848e319661df4b10834bb82260ae9940c) Update dependencies and scripts in backend `package.json`.*
+- [`d524ba1`](https://github.com/wangc9/bike-journey-viewer/commit/d524ba1a79a60d6c7979277758f081efecb913ca) Update dependencies and scripts in backend `package.json`.
 	- Add `pg` and `sequelize` for database connection.
 	- Add `typedoc` for code documentation.
 	- Add `start` and `dev` scripts with different environments.

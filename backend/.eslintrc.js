@@ -4,7 +4,7 @@ module.exports = {
     node: true,
     es2016: true,
   },
-  extends: ['airbnb-base', 'prettier', 'airbnb-typescript/base'],
+  extends: ['airbnb-base', 'airbnb-typescript/base', 'prettier'],
   parserOptions: {
     project: './tsconfig.eslint.json',
     tsconfigRootDir: __dirname,
