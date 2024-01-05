@@ -2,10 +2,16 @@
 Note: "*" indicates that the commit link is a placeholder. The corresponding link will be updated in the next commit.
 
 
+## v0.0.5
+
+### Features
+- [`9fdd5f6`](https://github.com/wangc9/bike-journey-viewer/commit/9fdd5f6aac53e04adb5c2a0803cd4e305b269d96)* Add `Journey` model.
+
+
 ## v0.0.4
 
 ### Features
-- [`c242b66`](https://github.com/wangc9/bike-journey-viewer/commit/c242b6606d27eb8d5dbc482e34b1677e72ceed01) Add `Station` model.
+- [`9fdd5f6`](https://github.com/wangc9/bike-journey-viewer/commit/9fdd5f6aac53e04adb5c2a0803cd4e305b269d96) Add `Station` model.
 
 
 ## v0.0.3
