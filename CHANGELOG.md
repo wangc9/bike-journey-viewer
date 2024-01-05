@@ -2,10 +2,16 @@
 Note: "*" indicates that the commit link is a placeholder. The corresponding link will be updated in the next commit.
 
 
+## v0.0.4
+
+### Features
+- [`c242b66`](https://github.com/wangc9/bike-journey-viewer/commit/c242b6606d27eb8d5dbc482e34b1677e72ceed01) Add `Station` model.
+
+
 ## v0.0.3
 
 ### Chores
-- [`d524ba1`](https://github.com/wangc9/bike-journey-viewer/commit/d524ba1a79a60d6c7979277758f081efecb913ca)* Refactor environment variable configuration and database connection to separate files in `utils`.
+- [`c242b66`](https://github.com/wangc9/bike-journey-viewer/commit/c242b6606d27eb8d5dbc482e34b1677e72ceed01) Refactor environment variable configuration and database connection to separate files in `utils`.
 
 
 ## v0.0.2
