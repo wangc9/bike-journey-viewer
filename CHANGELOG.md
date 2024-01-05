@@ -2,10 +2,17 @@
 Note: "*" indicates that the commit link is a placeholder. The corresponding link will be updated in the next commit.
 
 
+## v0.0.7
+
+### Features
+- [`659bb0a`](https://github.com/wangc9/bike-journey-viewer/commit/659bb0a89f9e9664764802dd391dc0c98c3919f5)* Add controllers for `Journey`-related data handling.
+	-  Journey info, along with the info for its departing station and destination station respectively can be retrieved through `/api/journeys/:id`.
+
+
 ## v0.0.6
 
 ### Features
-- [`62323a0`](https://github.com/wangc9/bike-journey-viewer/commit/62323a047d99651aebcdb50a5e35e501f46ab64b)* Add relations between `Journey` model and `Station` model.
+- [`659bb0a`](https://github.com/wangc9/bike-journey-viewer/commit/659bb0a89f9e9664764802dd391dc0c98c3919f5) Add relations between `Journey` model and `Station` model.
 
 
 ## v0.0.5
