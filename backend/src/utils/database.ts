@@ -19,7 +19,14 @@ export const sequelize = new Sequelize(DATABASE_URL, {
       /SequelizeInvalidConnectionError/,
       /SequelizeConnectionTimedOutError/,
       /SequelizeConnectionAcquireTimeoutError/,
+      /Connection terminated unexpectedly/,
     ],
+  },
+  dialectOptions: {
+    ssl: {
+      require: true,
+      rejectUnauthorized: false,
+    },
   },
 });
 
