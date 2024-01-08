@@ -7,7 +7,21 @@ import { Sequelize, Error } from 'sequelize';
 import { DATABASE_URL } from './config';
 
 /** Sequelize instantiation. */
-export const sequelize = new Sequelize(DATABASE_URL);
+export const sequelize = new Sequelize(DATABASE_URL, {
+  retry: {
+    max: Infinity,
+    match: [
+      /ConnectionError/,
+      /SequelizeConnectionError/,
+      /SequelizeConnectionRefusedError/,
+      /SequelizeHostNotFoundError/,
+      /SequelizeHostNotReachableError/,
+      /SequelizeInvalidConnectionError/,
+      /SequelizeConnectionTimedOutError/,
+      /SequelizeConnectionAcquireTimeoutError/,
+    ],
+  },
+});
 
 /**
  * Connect to database via sequelize.
