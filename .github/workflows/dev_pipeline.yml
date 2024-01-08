@@ -50,6 +50,8 @@ jobs:
             sleep 1
           done
       - name: Run jest tests
+        env:
+          DATABASE_URL: ${{ SECRETS.database_url }}
         run: npm test
 
   version_change:
