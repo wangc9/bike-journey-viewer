@@ -2,10 +2,16 @@
 Note: "*" indicates that the commit link is a placeholder. The corresponding link will be updated in the next commit.
 
 
+## v0.0.8
+
+### Bug fixes
+- [`c5568bb`](https://github.com/wangc9/bike-journey-viewer/commit/c5568bb72a7e34a96cc086c042c7fc4c0f9a7dd9)* Add foreign key definition in `Journey` model.
+
+
 ## v0.0.7
 
 ### Features
-- [`659bb0a`](https://github.com/wangc9/bike-journey-viewer/commit/659bb0a89f9e9664764802dd391dc0c98c3919f5)* Add controllers for `Journey`-related data handling.
+- [`c5568bb`](https://github.com/wangc9/bike-journey-viewer/commit/c5568bb72a7e34a96cc086c042c7fc4c0f9a7dd9) Add controllers for `Journey`-related data handling.
 	-  Journey info, along with the info for its departing station and destination station respectively can be retrieved through `/api/journeys/:id`.
 
 

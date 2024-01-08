@@ -40,6 +40,22 @@ Journey.init(
     returnDateTime: {
       type: DataTypes.DATE,
     },
+    departureStationId: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      references: {
+        model: 'station',
+        key: 'id',
+      },
+    },
+    returnStationId: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      references: {
+        model: 'station',
+        key: 'id',
+      },
+    },
     distance: {
       type: DataTypes.INTEGER,
     },
