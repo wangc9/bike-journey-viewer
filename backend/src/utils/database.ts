@@ -8,26 +8,26 @@ import { DATABASE_URL } from './config';
 
 /** Sequelize instantiation. */
 export const sequelize = new Sequelize(DATABASE_URL, {
-  retry: {
-    max: Infinity,
-    match: [
-      /ConnectionError/,
-      /SequelizeConnectionError/,
-      /SequelizeConnectionRefusedError/,
-      /SequelizeHostNotFoundError/,
-      /SequelizeHostNotReachableError/,
-      /SequelizeInvalidConnectionError/,
-      /SequelizeConnectionTimedOutError/,
-      /SequelizeConnectionAcquireTimeoutError/,
-      /Connection terminated unexpectedly/,
-    ],
-  },
-  dialectOptions: {
-    ssl: {
-      require: true,
-      rejectUnauthorized: false,
-    },
-  },
+  // retry: {
+  //   max: Infinity,
+  //   match: [
+  //     /ConnectionError/,
+  //     /SequelizeConnectionError/,
+  //     /SequelizeConnectionRefusedError/,
+  //     /SequelizeHostNotFoundError/,
+  //     /SequelizeHostNotReachableError/,
+  //     /SequelizeInvalidConnectionError/,
+  //     /SequelizeConnectionTimedOutError/,
+  //     /SequelizeConnectionAcquireTimeoutError/,
+  //     /Connection terminated unexpectedly/,
+  //   ],
+  // },
+  // dialectOptions: {
+  //   ssl: {
+  //     require: true,
+  //     rejectUnauthorized: false,
+  //   },
+  // },
 });
 
 /**
