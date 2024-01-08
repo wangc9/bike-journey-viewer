@@ -51,7 +51,7 @@ jobs:
           done
       - name: Run jest tests
         env:
-          DATABASE_URL: ${{ SECRETS.database_url }}
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
         run: npm test
 
   version_change:
