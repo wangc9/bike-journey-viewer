@@ -42,10 +42,15 @@ jobs:
         run: npm install
       - name: Check style
         run: npm run lint
-      # - name: Run jest tests
-      #   env:
-
-      #   run: npm test
+      - name: Build database
+        run: docker compose up --build --renew-anon-volumes -d
+      - name: Wait for database to be ready
+        run: |
+          until docker compose exec -T postgres pg_isready; do
+            sleep 1
+          done
+      - name: Run jest tests
+        run: npm test
 
   version_change:
     if: ${{ github.event_name == 'push' && !contains(join(github.event.commits.*.message, ', '), '#skip') }}
