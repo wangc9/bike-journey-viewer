@@ -7,12 +7,22 @@ import arrayHandler from '../services/stationService';
 const stationRouter = express.Router();
 
 /**
- * Get all stations.
+ * Get all stations. If no page is given, all stations will be returned.
+ * Otherwise, only 20 entries on the given page are returned.
  *
- * @returns `{...Array<Station>}`
+ * @returns `stations` - An array of stations with {id, stationName, stationAddress, x, y}
  */
-stationRouter.get('/', async (_request: Request, response: Response) => {
-  const stations = await models.Station.findAll({});
+stationRouter.get('/', async (request: Request, response: Response) => {
+  const { page } = request.query;
+  let stations;
+  if (page) {
+    stations = await models.Station.findAll({
+      offset: Number(page) * 20,
+      limit: 20,
+    });
+  } else {
+    stations = await models.Station.findAll({});
+  }
   if (stations) {
     return response.json({ stations });
   }

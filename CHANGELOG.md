@@ -2,10 +2,18 @@
 Note: "*" indicates that the commit link is a placeholder. The corresponding link will be updated in the next commit.
 
 
+## v0.0.12
+
+### Features
+- [`fea2984`](https://github.com/wangc9/bike-journey-viewer/commit/fea29847bb2ef9d21d40541d74ba03b7a33b9480)* Add pagination to `stations` controller.
+	- Pagination can be activated through `/api/stations/?page=` when retrieving multiple station information starting from page 0. If page number is not provided, all stations will be returned as usual.
+	- Unit tests are updated to test the logic of pagination.
+
+
 ## v0.0.11
 
 ### Features
-- [`fea2984`](https://github.com/wangc9/bike-journey-viewer/commit/fea29847bb2ef9d21d40541d74ba03b7a33b9480)* Add new return information to `stationRouter`.
+- [`e522341`](https://github.com/wangc9/bike-journey-viewer/commit/e522341179aecc22c7b0fd654defa3424bc9b822) Add new return information to `stationRouter`.
 	- Calculation of count and average distance is moved to a separate `stationService`
 	- The new calculation can now calculate four different scenarios: calculate all non-null journeys, all journeys covering more than 10 meters, all journeys lasting for more than 10 seconds, and all journeys both covering more than 10 meters and lasting for more than 10 seconds. All results are now returned together through `/api/stations/:id`.
 	- Unit tests stay the same at the moment. Note: The unit test suite does not include tests for irregular journeys. The tests might be added later as the current database does not contain such entries.

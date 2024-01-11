@@ -39,4 +39,24 @@ describe('station logic tests', () => {
       .expect(200)
       .expect('Content-Type', /application\/json/);
   });
+
+  test('Can limit the number of response in pagination', async () => {
+    const response = await api
+      .get(`${baseURL}/?page=0`)
+      .expect(200)
+      .expect('Content-Type', /application\/json/);
+    expect(response.body.stations).toHaveLength(20);
+  });
+
+  test('Different page show different information', async () => {
+    const page0 = await api
+      .get(`${baseURL}/?page=0`)
+      .expect(200)
+      .expect('Content-Type', /application\/json/);
+    const page1 = await api
+      .get(`${baseURL}/?page=1`)
+      .expect(200)
+      .expect('Content-Type', /application\/json/);
+    expect(page0.body.stations[0].id).not.toEqual(page1.body.stations[0].id);
+  });
 });
