@@ -14,17 +14,17 @@ class Journey extends Model<
 > {
   declare id: number;
 
-  declare departureDateTime?: Date;
+  declare departureDateTime: Date | null;
 
-  declare returnDateTime?: Date;
+  declare returnDateTime: Date | null;
 
   declare departureStationId: ForeignKey<Station['id']>;
 
   declare returnStationId: ForeignKey<Station['id']>;
 
-  declare distance?: number;
+  declare distance: number | null;
 
-  declare duration?: number;
+  declare duration: number | null;
 }
 
 Journey.init(
@@ -36,9 +36,11 @@ Journey.init(
     },
     departureDateTime: {
       type: DataTypes.DATE,
+      allowNull: true,
     },
     returnDateTime: {
       type: DataTypes.DATE,
+      allowNull: true,
     },
     departureStationId: {
       type: DataTypes.INTEGER,
@@ -58,9 +60,11 @@ Journey.init(
     },
     distance: {
       type: DataTypes.INTEGER,
+      allowNull: true,
     },
     duration: {
       type: DataTypes.INTEGER,
+      allowNull: true,
     },
   },
   {

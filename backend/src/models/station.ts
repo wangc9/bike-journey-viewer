@@ -12,13 +12,13 @@ class Station extends Model<
 > {
   declare id: number;
 
-  declare stationName: string;
+  declare stationName: string | null;
 
-  declare stationAddress: string;
+  declare stationAddress: string | null;
 
-  declare coordinateX: string;
+  declare coordinateX: string | null;
 
-  declare coordinateY: string;
+  declare coordinateY: string | null;
 }
 
 Station.init(
@@ -30,15 +30,19 @@ Station.init(
     },
     stationName: {
       type: DataTypes.CHAR(100),
+      allowNull: true,
     },
     stationAddress: {
       type: DataTypes.CHAR(100),
+      allowNull: true,
     },
     coordinateX: {
       type: DataTypes.CHAR(100),
+      allowNull: true,
     },
     coordinateY: {
       type: DataTypes.CHAR(100),
+      allowNull: true,
     },
   },
   {

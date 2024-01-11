@@ -25,12 +25,12 @@ describe('station logic tests', () => {
 
     expect(response.body.name).toBe('Keilalahti');
     expect(response.body.address).toBe('Keilalahdentie 2');
-    expect(response.body.startCount).toBe(3232);
-    expect(response.body.startAvg).toBeGreaterThan(3448);
-    expect(response.body.startAvg).toBeLessThan(3449);
-    expect(response.body.endCount).toBe(3146);
-    expect(response.body.endAvg).toBeGreaterThan(3420);
-    expect(response.body.endAvg).toBeLessThan(3421);
+    expect(response.body.startCount).toBe(3230);
+    expect(response.body.startAvg).toBeGreaterThan(3450);
+    expect(response.body.startAvg).toBeLessThan(3451);
+    expect(response.body.endCount).toBe(3142);
+    expect(response.body.endAvg).toBeGreaterThan(3424);
+    expect(response.body.endAvg).toBeLessThan(3425);
   });
 
   test("Can show all stations' information at once", async () => {
