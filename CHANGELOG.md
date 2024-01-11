@@ -2,10 +2,19 @@
 Note: "*" indicates that the commit link is a placeholder. The corresponding link will be updated in the next commit.
 
 
+## v0.0.11
+
+### Features
+- [`fea2984`](https://github.com/wangc9/bike-journey-viewer/commit/fea29847bb2ef9d21d40541d74ba03b7a33b9480)* Add new return information to `stationRouter`.
+	- Calculation of count and average distance is moved to a separate `stationService`
+	- The new calculation can now calculate four different scenarios: calculate all non-null journeys, all journeys covering more than 10 meters, all journeys lasting for more than 10 seconds, and all journeys both covering more than 10 meters and lasting for more than 10 seconds. All results are now returned together through `/api/stations/:id`.
+	- Unit tests stay the same at the moment. Note: The unit test suite does not include tests for irregular journeys. The tests might be added later as the current database does not contain such entries.
+
+
 ## v0.0.10
 
 ### Bug fixes
-- [`8e8cf68`](https://github.com/wangc9/bike-journey-viewer/commit/8e8cf6ba461f4e838c5a0ccd2a2593b64d1ce613)* Change type definition for `Station` and `Journey` model.
+- [`fea2984`](https://github.com/wangc9/bike-journey-viewer/commit/fea29847bb2ef9d21d40541d74ba03b7a33b9480) Change type definition for `Station` and `Journey` model.
 	- `null` type is added for all fields with `NULL` property.
 	- All fields are changed to be defined.
 	- Unit tests are changed according to the new model.
@@ -16,8 +25,7 @@ Note: "*" indicates that the commit link is a placeholder. The corresponding lin
 ### Features
 - [`8e8cf68`](https://github.com/wangc9/bike-journey-viewer/commit/8e8cf6ba461f4e838c5a0ccd2a2593b64d1ce613) Add controllers for `Station`-related data handling.
 	- Station info, along with the calculation of the count and average distance of journeys starting and terminating at the station respectively can be retrieved through `/api/stations/:id`.
-	- The controller can also calculate count and average distance for irregular journeys (journeys with less than 10s or 10m).
-	- Unit tests are added for the controller to test its logic. Note: The unit test suite does not include tests for irregular journeys. The tests might be added later as the current database does not contain such entries.
+	- Unit tests are added for the controller to test its logic.
 
 
 ## v0.0.8
