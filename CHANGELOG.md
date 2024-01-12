@@ -2,10 +2,21 @@
 Note: "*" indicates that the commit link is a placeholder. The corresponding link will be updated in the next commit.
 
 
+## v0.1.0
+
+### Features
+- [`fea2984`](https://github.com/wangc9/bike-journey-viewer/commit/fea29847bb2ef9d21d40541d74ba03b7a33b9480)* Add navigation to frontend.
+	- `Tailwindcss` is configured for styling.
+	- React Router is used for navigation.
+	- `Toolbar` component is added. The component contains three button: "Journey Viewer" home page button, "Station" button for viewing station lists, and GitHub button linking to the GitHub repo.
+	- `jest`, `ts-jest`, `react testing library` are configured for testing.
+	- Unit tests are added for the `Toolbar` component.
+
+
 ## v0.0.12
 
 ### Features
-- [`fea2984`](https://github.com/wangc9/bike-journey-viewer/commit/fea29847bb2ef9d21d40541d74ba03b7a33b9480)* Add pagination to `stations` controller.
+- [`d95a7ad`](https://github.com/wangc9/bike-journey-viewer/commit/d95a7adeeeee6855688de566b37b9f351295664b) Add pagination to `stations` controller.
 	- Pagination can be activated through `/api/stations/?page=` when retrieving multiple station information starting from page 0. If page number is not provided, all stations will be returned as usual.
 	- Unit tests are updated to test the logic of pagination.
 
