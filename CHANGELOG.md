@@ -2,10 +2,21 @@
 Note: "*" indicates that the commit link is a placeholder. The corresponding link will be updated in the next commit.
 
 
+## v0.1.0
+
+### Features
+- [`fea2984`](https://github.com/wangc9/bike-journey-viewer/commit/fea29847bb2ef9d21d40541d74ba03b7a33b9480)* Add service to retrieve station information into the frontend.
+	- Given the page number, stations' information are returned as an array using `getAll` function.
+	- Unit tests are included to mock and test the function.
+
+### Bug fixes
+- [`fea2984`](https://github.com/wangc9/bike-journey-viewer/commit/fea29847bb2ef9d21d40541d74ba03b7a33b9480)* Fix typo in `Toolbar` unit test.
+
+
 ## v0.0.14
 
 ### Bug fixes
-- [`fea2984`](https://github.com/wangc9/bike-journey-viewer/commit/fea29847bb2ef9d21d40541d74ba03b7a33b9480)* Extend error response to cover empty array scenario.
+- [`e4652cc`](https://github.com/wangc9/bike-journey-viewer/commit/e4652cc97c79f20d6e373af273c51aae1625b199) Extend error response to cover empty array scenario.
 	- If no station information is found, return error message `No station found` instead of returning an empty array.
 
 

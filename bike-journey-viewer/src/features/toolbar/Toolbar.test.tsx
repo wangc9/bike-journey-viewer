@@ -5,7 +5,7 @@ import userEvent from '@testing-library/user-event';
 import Toolbar from './Toolbar';
 
 describe('Toolbar tests', () => {
-  test('Home page button can be clicked', async () => {
+  test('All buttons can be clicked', async () => {
     const handleMainClick = jest.fn();
     const handleStationClick = jest.fn();
     const handleGitHubClick = jest.fn();
