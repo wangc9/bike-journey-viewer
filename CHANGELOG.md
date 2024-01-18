@@ -5,9 +5,12 @@ Note: "*" indicates that the commit link is a placeholder. The corresponding lin
 ## v0.1.1
 
 ### Features
-- [`fea2984`](https://github.com/wangc9/bike-journey-viewer/commit/fea29847bb2ef9d21d40541d74ba03b7a33b9480)* Add simple list view for stations.
+- [`ba7464d`](https://github.com/wangc9/bike-journey-viewer/commit/ba7464d2148550111b3dc2a14c9daecdcde3e53f) Add simple list view for stations.
 	- The name of each stations are displayed in the list.
 	- Unit tests are included to mock and test the `StationList` component.
+
+### Bug fixes
+- [`fea2984`](https://github.com/wangc9/bike-journey-viewer/commit/fea29847bb2ef9d21d40541d74ba03b7a33b9480)* Solve exhaustive-deps issue in `StationList`.
 
 
 ## v0.1.0

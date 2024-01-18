@@ -18,19 +18,19 @@ export default function StationList(): React.JSX.Element {
   useEffect(() => {
     stationService
       .getAll(0)
-      .then((stationResponse) =>
-        setStations(stations.concat(stationResponse.stations)),
-      );
+      .then((stationResponse) => setStations(stationResponse.stations));
   }, []);
 
   return (
     <div className="flex w-fit flex-col rounded-lg bg-slate-300 px-2 py-4">
       <table>
-        {stations.map((station) => (
-          <tr>
-            <td>{station.stationName}</td>
-          </tr>
-        ))}
+        <tbody>
+          {stations.map((station) => (
+            <tr key={station.id.toString()}>
+              <td>{station.stationName}</td>
+            </tr>
+          ))}
+        </tbody>
       </table>
     </div>
   );
