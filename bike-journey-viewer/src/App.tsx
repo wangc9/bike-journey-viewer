@@ -1,7 +1,7 @@
-import React from 'react';
 import { Route, Routes, useNavigate } from 'react-router-dom';
 import Toolbar from './features/toolbar/Toolbar';
 import './App.css';
+import StationList from './features/lists/StationList';
 
 function App() {
   const navigate = useNavigate();
@@ -27,7 +27,7 @@ function App() {
       />
       <Routes>
         <Route path="/" element={<h1>Welcome!</h1>} />
-        <Route path="/stations" element={<h1>Stations</h1>} />
+        <Route path="/stations" element={<StationList />} />
       </Routes>
     </>
   );

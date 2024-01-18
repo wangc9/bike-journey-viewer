@@ -2,15 +2,23 @@
 Note: "*" indicates that the commit link is a placeholder. The corresponding link will be updated in the next commit.
 
 
+## v0.1.1
+
+### Features
+- [`fea2984`](https://github.com/wangc9/bike-journey-viewer/commit/fea29847bb2ef9d21d40541d74ba03b7a33b9480)* Add simple list view for stations.
+	- The name of each stations are displayed in the list.
+	- Unit tests are included to mock and test the `StationList` component.
+
+
 ## v0.1.0
 
 ### Features
-- [`fea2984`](https://github.com/wangc9/bike-journey-viewer/commit/fea29847bb2ef9d21d40541d74ba03b7a33b9480)* Add service to retrieve station information into the frontend.
+- [`64b10b4`](https://github.com/wangc9/bike-journey-viewer/commit/64b10b40f839944be752074c972d0fd6f98c6ea5) Add service to retrieve station information into the frontend.
 	- Given the page number, stations' information are returned as an array using `getAll` function.
 	- Unit tests are included to mock and test the function.
 
 ### Bug fixes
-- [`fea2984`](https://github.com/wangc9/bike-journey-viewer/commit/fea29847bb2ef9d21d40541d74ba03b7a33b9480)* Fix typo in `Toolbar` unit test.
+- [`64b10b4`](https://github.com/wangc9/bike-journey-viewer/commit/64b10b40f839944be752074c972d0fd6f98c6ea5) Fix typo in `Toolbar` unit test.
 
 
 ## v0.0.14
