@@ -2,10 +2,17 @@
 Note: "*" indicates that the commit link is a placeholder. The corresponding link will be updated in the next commit.
 
 
-## v0.1.0
+## v0.0.14
+
+### Bug fixes
+- [`fea2984`](https://github.com/wangc9/bike-journey-viewer/commit/fea29847bb2ef9d21d40541d74ba03b7a33b9480)* Extend error response to cover empty array scenario.
+	- If no station information is found, return error message `No station found` instead of returning an empty array.
+
+
+## v0.0.13
 
 ### Features
-- [`fea2984`](https://github.com/wangc9/bike-journey-viewer/commit/fea29847bb2ef9d21d40541d74ba03b7a33b9480)* Add navigation to frontend.
+- [`8d3b49c`](https://github.com/wangc9/bike-journey-viewer/commit/8d3b49c4fcf0d5685e40bfe5aa764951eed39f5a) Add navigation to frontend.
 	- `Tailwindcss` is configured for styling.
 	- React Router is used for navigation.
 	- `Toolbar` component is added. The component contains three button: "Journey Viewer" home page button, "Station" button for viewing station lists, and GitHub button linking to the GitHub repo.

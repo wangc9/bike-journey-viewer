@@ -23,7 +23,7 @@ stationRouter.get('/', async (request: Request, response: Response) => {
   } else {
     stations = await models.Station.findAll({});
   }
-  if (stations) {
+  if (stations && stations.length > 0) {
     return response.json({ stations });
   }
   throw new ReferenceError('No station found');
