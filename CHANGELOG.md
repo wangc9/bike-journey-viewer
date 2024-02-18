@@ -2,6 +2,12 @@
 Note: "*" indicates that the commit link is a placeholder. The corresponding link will be updated in the next commit.
 
 
+## v0.1.2
+
+### Features
+- [`ba7464d`](https://github.com/wangc9/bike-journey-viewer/commit/ba7464d2148550111b3dc2a14c9daecdcde3e53f)* Update CI pipeline to enable actions on pull requests.
+
+
 ## v0.1.1
 
 ### Features
